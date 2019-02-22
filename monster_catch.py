@@ -39,6 +39,7 @@ def main():
                 self.rect = self.image.get_rect()
                 self.rect.left, self.rect.top = location
 
+
         BackGround = Background('background.png', (0,0))
         screen.blit(BackGround.image, BackGround.rect)
             
@@ -49,8 +50,9 @@ def main():
                 self.rect = self.image.get_rect()
                 self.rect.left, self.rect.top = location
 
-        monster = Monster('monster.png', (10,10))
-        screen.blit(monster.image, monster.rect)  
+        monster = Monster('monster.png', (35,35))
+        screen.blit(monster.image, monster.rect)
+       
 
         class Hero(pygame.sprite.Sprite):
             def __init__(self, image_file, location):
@@ -59,7 +61,7 @@ def main():
                 self.rect = self.image.get_rect()
                 self.rect.left, self.rect.top = location
 
-        hero = Hero('hero.png', ( 200,200))
+        hero = Hero('hero.png', (225,225))
         screen.blit(hero.image, hero.rect)
 
         class Goblin(pygame.sprite.Sprite):
@@ -69,7 +71,7 @@ def main():
                 self.rect = self.image.get_rect()
                 self.rect.left, self.rect.top = location
         
-        goblin = Goblin('goblin.png', (400,400))
+        goblin = Goblin('goblin.png', (425, 425))
         screen.blit(goblin.image, goblin.rect)
 
 
